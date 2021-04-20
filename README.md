@@ -1,3 +1,4 @@
+[![hackmd-github-sync-badge](https://hackmd.io/ZT34FQB7SMuBp0cz4fj5vQ/badge)](https://hackmd.io/ZT34FQB7SMuBp0cz4fj5vQ)
 ###### tags: `strunfun`
 
 # [pwa-sources-qrdisplaymodule](https://github.com/JhonnyJason/pwa-sources-qrdisplaymodule) - qrdisplaymodule
