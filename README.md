@@ -14,6 +14,9 @@ Component to display specific information as a QR-Code
         #qrdisplay-qr
         #qrdisplay-content
     ```
+- `qrdisplayBackground°` available
+- `qrdisplayQr°` available
+- `qrdisplayContent°` available
 
 ## Structure
 - `QR°`
