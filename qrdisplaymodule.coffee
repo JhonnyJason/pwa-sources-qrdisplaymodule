@@ -1,22 +1,18 @@
-qrdisplaymodule = {name: "qrdisplaymodule"}
 ############################################################
-#region printLogFunctions
-log = (arg) ->
-    if allModules.debugmodule.modulesToDebug["qrdisplaymodule"]?  then console.log "[qrdisplaymodule]: " + arg
-    return
-ostr = (obj) -> JSON.stringify(obj, null, 4)
-olog = (obj) -> log "\n" + ostr(obj)
-print = (arg) -> console.log(arg)
+#region debug
+import { createLogFunctions } from "thingy-debug"
+{log, olog} = createLogFunctions("qrdisplaymodule")
 #endregion
 
+
 ############################################################
-QR = require("vanillaqr").default
+import QR from "vanillaqr"
 
 ############################################################
 currentQr = null
 
 ############################################################
-qrdisplaymodule.initialize = ->
+export initialize = ->
     log "qrdisplaymodule.initialize"
 
     options = 
@@ -40,7 +36,7 @@ qrClicked = ->
     return
 
 ############################################################
-qrdisplaymodule.displayCode = (information) ->
+export displayCode = (information) ->
     log "qrdisplaymodule.displayCode"
     log information
     currentQr.url = information
@@ -48,5 +44,3 @@ qrdisplaymodule.displayCode = (information) ->
     currentQr.init()
     qrdisplayBackground.classList.add("active")
     return
-
-module.exports = qrdisplaymodule
