@@ -7,12 +7,14 @@
     height 100%
     width 100%
     transform: translateY(-102%)
-    background-color element-background
+    background-color alpha(cd-background, 0.4)
+    overflow: hidden
 
 #qrdisplay-content
-    padding 10px
-    background-color cd-background
+    padding 15px
+    background-color alpha(cd-background, 0.8)
     word-break: break-all
+    text-align center
 
 #qrdisplay-qr
     position absolute
