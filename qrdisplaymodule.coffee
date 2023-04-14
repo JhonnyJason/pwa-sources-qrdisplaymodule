@@ -15,9 +15,16 @@ currentQr = null
 export initialize = ->
     log "qrdisplaymodule.initialize"
 
+    width = window.innerWidth
+    height = window.innerHeight - 100 # for gap to top and label
+    
+    if height > width then size = width
+    else size = height
+    log size
+
     options = 
         url: ""
-        size: 320
+        size: size
         toTable: false
         ecclevel: 3
         noBorder: true

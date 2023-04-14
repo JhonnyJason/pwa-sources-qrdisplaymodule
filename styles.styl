@@ -6,9 +6,12 @@
     z-index:  299
     height 100%
     width 100%
+    overflow: hidden
     transform: translateY(-102%)
     background-color alpha(cd-background, 0.4)
-    overflow: hidden
+    opacity: 0
+    transition: opacity 0.3s
+    pointer-events: none
 
 #qrdisplay-content
     padding 15px
@@ -26,5 +29,8 @@
 
 #qrdisplay-background.active
     transform: translateY(0)
+    opacity: 1
+    pointer-events: all
+
 
 
