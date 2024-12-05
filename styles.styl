@@ -1,6 +1,7 @@
 // qrdisplay styles
 #qrdisplay-background
     position absolute
+    color cd-foreground
     top 0
     left 0
     z-index:  299
@@ -15,6 +16,7 @@
 
 #qrdisplay-content
     padding 15px
+    color cd-foreground
     background-color alpha(cd-background, 0.8)
     word-break: break-all
     text-align center
@@ -25,7 +27,8 @@
     left 50%
     transform translate(-50%, -50%)
     padding 40px
-    background-color white
+    color #000
+    background-color #fff
 
 #qrdisplay-background.active
     transform: translateY(0)
